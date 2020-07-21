@@ -1,34 +1,37 @@
 package com.User;
 
+import com.Collections.DuplicateEntry;
+import com.Collections.SaveDetails;
+
 import java.io.IOException;
 import java.util.Scanner;
 
 public class UserDetails
 {
-    String firstname;
-    String lastname;
-    String address;
-    String city;
-    String zip;
-    String phnum;
 
+    UserObjects userobjects=new UserObjects();
+    DuplicateEntry duplicateentry=new DuplicateEntry();
     Scanner sc=new Scanner(System.in);
-    public void addUserInput() throws IOException
+    public void addUserInput()
     {
         System.out.println("enter a first name");
-        String firstname=sc.next();
+        userobjects.setFirstName(sc.next());
+        String name=userobjects.getFirstName();
+        duplicateentry.duplicateKey(name);
         System.out.println("enter a second name");
-        String lastname=sc.next();
+        userobjects.setLastName(sc.next());
         System.out.println("enter a address");
-        String address=sc.next();
-        System.out.println("ente a city name");
-        String city=sc.next();
+        userobjects.setAddress(sc.next());
+        System.out.println("enter a city name");
+        userobjects.setCity(sc.next());
         System.out.println("enter a state name");
-        String state=sc.next();
+        userobjects.setState(sc.next());
         System.out.println("enter your postal code");
-        String zip=sc.next();
+        userobjects.setZip(sc.next());
         System.out.println("enter a your phone number");
-        String phnum=sc.next();
-        UserObjects userobjects=new UserObjects(firstname,lastname,address,city,state,zip,phnum);
+        userobjects.setPhNum(sc.next());
+
+        SaveDetails savedetails=new SaveDetails();
+        savedetails.saveUser();
     }
 }
