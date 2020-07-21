@@ -2,6 +2,7 @@ package com.AddressBook;
 
 import com.Collections.DeleteAddress;
 import com.Collections.EditAddress;
+import com.Collections.KeySort;
 import com.User.UserDetails;
 
 import java.util.Scanner;
@@ -11,8 +12,9 @@ public class AddressSwitch {
     UserDetails userdetails=new UserDetails();
     EditAddress editaddress=new EditAddress();
     DeleteAddress deleteaddress=new DeleteAddress();
+    KeySort keysort=new KeySort();
     public void addressBook(){
-        System.out.println("1.add 2.edit 3.delete");
+        System.out.println("1.add 2.edit 3.delete 4.sort by key");
         int n=sc.nextInt();
         switch(n)
         {
@@ -25,6 +27,9 @@ public class AddressSwitch {
             case 3:
                 deleteaddress.editUser();
                 break;
+            case 4:
+                keysort.sorting();
+
         }
     }
     public void againContinue(){
