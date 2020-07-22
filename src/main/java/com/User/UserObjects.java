@@ -73,3 +73,4 @@ public class UserObjects {
                 + ", city=" + city + ", state=" + state + ", zip=" + zip + ", phnum=" + phNum + "]";
     }
 }
+
