@@ -1,3 +1,4 @@
+
 package com.User;
 
 import com.Collections.SaveDetails;
@@ -33,3 +34,4 @@ public class UserDetails
         savedetails.saveUser();
     }
 }
+
