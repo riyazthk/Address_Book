@@ -109,14 +109,21 @@ public class SaveDetails {
         }
         System.out.println(hashmap);
     }
-
     public void viewPerson(){
        for(Map.Entry<String,UserObjects>entry:hashmap.entrySet()){
            System.out.println(entry.getKey()+" "+entry.getValue().getCity()+" "+entry.getValue().getState());
        }
     }
 
-
+    public void searchPerson(){
+         String city=sc.next();
+         String state=sc.next();
+         for(Map.Entry<String,UserObjects>entry:hashmap.entrySet()){
+             if(entry.getValue().getCity().equals(city) || entry.getValue().getState().equals(state)){
+                 System.out.println(entry.getValue().getFirstName());
+             }
+         }
+    }
 
     public void saveUser(){
         hashmap.put(userobjects.getFirstName(),userobjects);
