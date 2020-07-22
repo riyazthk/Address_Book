@@ -1,9 +1,8 @@
+
 package com.User;
 
-import com.Collections.DuplicateEntry;
 import com.Collections.SaveDetails;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class UserDetails
@@ -35,3 +34,4 @@ public class UserDetails
         savedetails.saveUser();
     }
 }
+
