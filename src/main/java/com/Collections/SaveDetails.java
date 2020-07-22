@@ -109,7 +109,11 @@ public class SaveDetails {
         }
         System.out.println(hashmap);
     }
-
+    public void viewPerson(){
+       for(Map.Entry<String,UserObjects>entry:hashmap.entrySet()){
+           System.out.println(entry.getKey()+" "+entry.getValue().getCity()+" "+entry.getValue().getState());
+       }
+    }
 
 
     public void saveUser(){
