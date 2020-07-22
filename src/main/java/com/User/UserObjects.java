@@ -1,39 +1,29 @@
 package com.User;
 
 public class UserObjects {
-    private String firstname;
-    private String lastname;
+    private String firstName;
+    private String lastName;
     private String address;
     private String city;
     private String state;
     private String zip;
-    private String phnum;
-    UserObjects(String firstname, String lastname, String address, String city, String state, String zip, String phnum)
-    {
-        this.firstname=firstname;
-        this.lastname=lastname;
-        this.address=address;
-        this.city=city;
-        this.state=state;
-        this.zip=zip;
-        this.phnum=phnum;
-    }
+    private String phNum;
 
-    public String getFirstname()
+    public String getFirstName()
     {
-        return firstname;
+        return firstName;
     }
-    public void setFirstname(String firstname)
+    public void setFirstName(String firstName)
     {
-        this.firstname = firstname;
+        this.firstName = firstName;
     }
-    public String getLastname()
+    public String getLastName()
     {
-        return lastname;
+        return lastName;
     }
-    public void setLastname(String lastname)
+    public void setLastName(String lastName)
     {
-        this.lastname = lastname;
+        this.lastName = lastName;
     }
     public String getAddress()
     {
@@ -67,18 +57,18 @@ public class UserObjects {
     {
         this.zip = zip;
     }
-    public String getPhnum()
+    public String getPhNum()
     {
-        return phnum;
+        return phNum;
     }
-    public void setPhnum(String phnum)
+    public void setPhNum(String phNum)
     {
-        this.phnum = phnum;
+        this.phNum = phNum;
     }
 
     public String toString()
     {
-        return "UserObjects [firstname=" + firstname + ", lastname=" + lastname + ", address=" + address
-                + ", city=" + city + ", state=" + state + ", zip=" + zip + ", phnum=" + phnum + "]";
+        return "UserObjects [firstname=" + firstName + ", lastname=" + lastName + ", address=" + address
+                + ", city=" + city + ", state=" + state + ", zip=" + zip + ", phnum=" + phNum + "]";
     }
 }
