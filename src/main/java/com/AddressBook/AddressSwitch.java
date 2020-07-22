@@ -10,8 +10,7 @@ public class AddressSwitch {
     UserDetails userdetails=new UserDetails();
     SaveDetails savedetails=new SaveDetails();
     public void addressBook(){
-        System.out.println("1.add 2.edit 3.delete 4.sort by key 5.sort by value 6.view person");
-
+        System.out.println("1.add 2.edit 3.delete 4.sort by key 5.sort by value 6.view person 7.search person");
         int n=sc.nextInt();
         switch(n)
         {
@@ -33,8 +32,9 @@ public class AddressSwitch {
             case 6:
                 savedetails.viewPerson();
                 break;
-            case 5:
-                savedetails.sortValues();
+            case 7:
+                savedetails.searchPerson();
+                break;
 
         }
     }
